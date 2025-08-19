@@ -1,12 +1,9 @@
-#set
-animals = {"dog","cat","lion","tiger",True,100}
-animals.add("duck")
-animals.update(("pig","yiraf"))
-
-pets = set(("dog","cat","rabbit","pocupine"))
-
-print(animals)
-print(pets)
-
-data =animals.difference(pets)
-print(data)
+#dictionary
+colors = {
+    "red" : "1",
+    "green":"2",
+    "blue":"3"
+}
+colors["yellow"]= "4"
+colors["blue"]="5"
+print(colors)
