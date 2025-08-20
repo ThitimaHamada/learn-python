@@ -1,10 +1,9 @@
-#OR pattern
-data =input("Enter your prefix :")
-
+#Sequence pattern
+data = [1,2]
 match data:
-    case "boy" | "mr.":
-        print("male")
-    case "girl" | "mrs." | "miss":
-        print("female")
-    case _:
-        print("No information found")
+    case []:
+        print("No infornamation")
+    case [1,2]:
+        print("information are 1 and 2")
+    case [1,2,3]:
+        print("information are 1,2 and 3")
