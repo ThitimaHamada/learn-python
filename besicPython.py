@@ -1,12 +1,10 @@
-#Guard Filter
-# 100 = Get full score, 50-99 = Passed the test
-score = int(input("Enter your score (0-100):"))
-print("Your score is ",score)
+#OR pattern
+data =input("Enter your prefix :")
 
-match score:
-    case 100 :
-        print("Got a full score")
-    case score if score >=50 and score < 100:
-        print("Passed the exam")
+match data:
+    case "boy" | "mr.":
+        print("male")
+    case "girl" | "mrs." | "miss":
+        print("female")
     case _:
-        print("Failed the exam")
+        print("No information found")
