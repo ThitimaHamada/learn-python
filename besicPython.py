@@ -1,25 +1,15 @@
-#Create Function
-def sayHello(time,username,age): #parameter
-    print("Hello",time,username)
-    print("This year you are",age,"years old")
+#arge / kwargs
 
-def saveEmployee(name,departmemt,salary):
-    print(f"Name {name},Department {departmemt}")
-    print(f"Salary {salary} yen")
+def saveEmployee(*args): #tuple
+    print(f"Name {args[0]},Department {args[1]}")
+    print(f"Salary {args[2]} yen")
+    print(f"Address {args[3]} ")
+    print("----------")
 
-def showTable(num):
-    print("---------")
-    for i in range(1,13):
-        print(f"{num} x {i} = {num*i}")
 
-#mytime = "morning"
-#sayHello(mytime,"Tawan",31) #argument
-#sayHello(mytime,"Jojo",25)
-#showTable(3)
-#showTable(5)
-saveEmployee("Tawan","IT",700000)
-saveEmployee("Nut","graphic",800000)
-saveEmployee("Jo","sale",600000)
+saveEmployee("Tawan","IT",700000,"Ueno")
+saveEmployee("Nut","graphic",800000,"Tokyo")
+saveEmployee("Jo","sale",600000,"Kyoto")
 
 
 
