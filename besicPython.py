@@ -1,15 +1,15 @@
 #arge / kwargs
 
-def saveEmployee(*args): #tuple
-    print(f"Name {args[0]},Department {args[1]}")
-    print(f"Salary {args[2]} yen")
-    print(f"Address {args[3]} ")
+def saveEmployee(**kwargs): #tuple
+    print(f"Name {kwargs["name"]},Department {kwargs["department"]}")
+    print(f"Salary {kwargs["salary"]} yen")
+    print(f"Address {kwargs["address"]} ")
     print("----------")
 
 
-saveEmployee("Tawan","IT",700000,"Ueno")
-saveEmployee("Nut","graphic",800000,"Tokyo")
-saveEmployee("Jo","sale",600000,"Kyoto")
+saveEmployee(name="Tawan",department="IT",salary=700000,address="Ueno")
+saveEmployee(name="Nut",department="graphic",salary=800000,address="Tokyo")
+saveEmployee(name="Jo",department="sale",salary=600000,address="Kyoto")
 
 
 
